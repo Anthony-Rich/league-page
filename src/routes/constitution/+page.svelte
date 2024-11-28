@@ -14,290 +14,202 @@
     }
 </script>
 
-<style>
-    .constitution {
-        position: relative;
-        z-index: 1;
-        width: 92%;
-        max-width: 800px;
-        margin: 8em auto 10em;
-    }
-
-    h1 {
-        font-size: 2em;
-        line-height: 1.2em;
-        text-align: center;
-        margin: 2em 0 1.5em;
-    }
-
-    h2 {
-        font-size: 1.5em;
-        line-height: 1.2em;
-    }
-
-    h3 {
-        text-decoration: underline;
-        font-size: 1.3em;
-        line-height: 1.2em;
-    }
-
-    h4 {
-        text-decoration: underline;
-        margin-left: 2em;
-        font-size: 1.2em;
-        line-height: 1.2em;
-    }
-
-    h5 {
-        margin-left: 6em;
-        font-size: 0.8em;
-        line-height: 1.1em;
-    }
-
-    .subBlock {
-        margin-left: 2.4em;
-    }
-
-    .sectionHeading {
-        margin: 4em 0 1.5em;
-    }
-
-    .subSectionHeading {
-        margin: 1.5em 0 1.5em;
-    }
-
-    .underscore {
-        text-decoration: underline;
-    }
-
-    .right {
-        text-align: right;
-    }
-
-    .positionMaximums td {
-        min-width: 3em;
-    }
-
-    .noUnderscore {
-        text-decoration: none;
-    }
-
-    .clickable {
-        cursor: pointer;
-    }
-
-    .clickable:hover {
-        color: #00316b;
-    }
-
-    p {
-        color: #777;
-    }
-</style>
-
-<div class="constitution">
-    <h1 class="noUnderscore">LEGENDS LEAGUE CONSTITUTION</h1>
-    
-    <h2 class="noUnderscore">TABLE OF CONTENTS</h2>
-    
-    <h3 class="noUnderscore clickable" on:click={() => goToSection(one)}>Section 1: Roster</h3>
-        <h4 class="noUnderscore clickable" on:click={() => goToSection(oneOne)}>1.1 Positional Breakdown</h4>
-            <h5 class="noUnderscore clickable" on:click={() => goToSection(oneOneOne)}>1.1.1 Position Maximums</h5>
-        <h4 class="noUnderscore clickable" on:click={() => goToSection(oneTwo)}>1.2 Trading</h4>
-            <h5 class="noUnderscore clickable" on:click={() => goToSection(oneTwoOne)}>1.2.1 Trade Collusion</h5>
-            <h5 class="noUnderscore clickable" on:click={() => goToSection(oneTwoTwo)}>1.2.2 Lending Players Prohibition</h5>
-            <h5 class="noUnderscore clickable" on:click={() => goToSection(oneTwoThree)}>1.2.3 Trade Deadline</h5>
-            <h5 class="noUnderscore clickable" on:click={() => goToSection(oneTwoFour)}>1.2.4 Trade Restrictions</h5>
-            <h5 class="noUnderscore clickable" on:click={() => goToSection(oneTwoFive)}>1.2.5 Veto/Trade Process</h5>
-        <h4 class="noUnderscore clickable" on:click={() => goToSection(oneThree)}>1.3 Waiver Wire</h4>
-    
-    <h3 class="noUnderscore clickable" on:click={() => goToSection(two)}>Section 2: Drafting</h3>
-    
-        <h4 class="noUnderscore clickable" on:click={() => goToSection(twoOne)}>2.1 Draft Order</h4>
-        <h4 class="noUnderscore clickable" on:click={() => goToSection(twoTwo)}>2.2 Rookie Drafts</h4>
-        <h4 class="noUnderscore clickable" on:click={() => goToSection(twoThree)}>2.3 Draft Day Trades</h4>
-    
-    <h3 class="noUnderscore clickable" on:click={() => goToSection(three)}>Section 3: Scoring System</h3>
-    
-        <h4 class="noUnderscore clickable" on:click={() => goToSection(threeOne)}>3.1 Voting on Scoring System</h4>
-    
-    <h3 class="noUnderscore clickable" on:click={() => goToSection(four)}>Section 4: Postseason</h3>
-    
-        <h4 class="noUnderscore clickable" on:click={() => goToSection(fourOne)}>4.1 Playoffs</h4>
-        <h4 class="noUnderscore clickable" on:click={() => goToSection(fourTwo)}>4.2 Playoff Tiebreakers</h4>
-
-    <h3 class="noUnderscore clickable" on:click={() => goToSection(five)}>Section 5: Tanking Policy</h3>
-    
-        <h4 class="noUnderscore clickable" on:click={() => goToSection(fiveOne)}>5.1 League Tanking Policy</h4>
-
-    <h3 class="noUnderscore clickable" on:click={() => goToSection(six)}>Section 6: Replacing Managers</h3>
-    
-        <h4 class="noUnderscore clickable" on:click={() => goToSection(sixOne)}>6.1 Removing Managers</h4>
-        <h4 class="noUnderscore clickable" on:click={() => goToSection(sixTwo)}>6.2 Replacing Managers</h4>
-        <h4 class="noUnderscore clickable" on:click={() => goToSection(sixThree)}>6.3 Replacement Incentive</h4>
-
-    <h3 class="noUnderscore clickable" on:click={() => goToSection(seven)}>Section 7: League Finances</h3>
-    
-        <h4 class="noUnderscore clickable" on:click={() => goToSection(sevenOne)}>7.1 League Dues</h4>
-        <h4 class="noUnderscore clickable" on:click={() => goToSection(sixTwo)}>7.2 Payout</h4>
-        <h4 class="noUnderscore clickable" on:click={() => goToSection(sixThree)}>7.3 Raising Dues</h4>
-    
-    
-    <hr />
-    
-    <h2 class="sectionHeading" bind:this={one}>Section 1 Roster Breakdown</h2>
-    
-    <h3 class="subSectionHeading" bind:this={oneOne}>1.1 Positional Breakdown</h3>
-    
-    <p>28 Total Players</p>
-    
-    <p class="underscore">Starters</p>
-    <ul>
-        <li>QB</li>
-        <li>RB</li>
-        <li>RB</li>
-        <li>WR</li>
-        <li>WR</li>
-        <li>TE</li>
-        <li>FLEX (RB/WR/TE)</li>
-        <li>FLEX (RB/WR)</li>
-        <li>D/ST</li>
-        <li>K</li>
-    </ul>
-    
-    <p>18 Bench (Expanded by 5 between the keague draft and start of regular season)</p>
-
-    <p>1 IR Spots (Player must be labeled as IR, Out, or Covid in the Sleeper App)</p>
-    
-        <h4 bind:this={oneOneOne}>1.1.1 Position Maximums</h4>
-        
-        <div class="subBlock">
-            <table class="positionMaximums">
-                <tr><td>QB</td><td class="right">3 active, 5 total</td></tr>
-                <tr><td>RB</td><td class="right">20</td></tr>
-                <tr><td>WR</td><td class="right">20</td></tr>
-                <tr><td>TE</td><td class="right">10</td></tr>
-                <tr><td>D/ST</td><td class="right">3</td></tr>
-                <tr><td>K</td><td class="right">3</td></tr>
-            </table>
-        </div>
-
-
-    <h3 class="subSectionHeading" bind:this={oneTwo}>1.2 Trading</h3>
-    
-    <p>Trading of players and draft picks (up to 3 drafts away) are allowed. Trades will process immediately and will be reversed if vetoed or under investigation for collusion. Tradable assets include players, draft picks, and FAAB $.</p>
-    
-    <h4 bind:this={oneTwoOne}>1.2.1 Trade Collusion</h4>
-    <div class="subBlock">
-        <p>If any owners are suspected of accepting bribes/offering bribes to enhance their/another owners team via trade, trading any assets other than fantasy players, draft picks, FAAB $, or otherwise found guilty of engaging in any form of collusion*, all parties involved in the trade will be susceptible to punishment. The punishments will go as followed:</p>
-        
-        <ul>
-            <li>First Offense – Immediate reduction of FAAB budget by 80%</li>
-            <li>Second Offense – Immediate freeze on all transaction types for the next 18 weeks of regular season and playoff fantasy football games, including trades and waiver wire bids</li>
-            <li>Third Offense – A league meeting of all members not involved in any of the improper trades/activity in question will take place to discuss next steps.</li>
-        </ul>
-
-        <p>All trades that are found guilty of collusion, will be reversed/denied. If the trade had affected the outcome of previous games, the results of those games will be revised.  </p>
-
-        <p>*Collusion includes the organizing of veto votes against an acceptable trade.</p>
-
-        <p>The commissioner will err on the side of letting owners manage their teams the way they see fit. Any collusion will need to be clear. The commissioner reserves the right to step in and at the very least assess the thinking of any team involved in a heavily lop-sided trade. </p>
-    </div>
-
-    <h4 bind:this={oneTwoTwo}>1.2.2 Lending Players Prohibition</h4>
-    <div class="subBlock">
-        <p>Any player traded from a team may not be re-acquired via trade within 6 weeks of the original trade. Any teams involved in this behavior will be subject to the aforementioned collusion punishments.</p>
-    </div>
-    
-    <h4 bind:this={oneTwoThree}>1.2.3 Trade Deadline</h4>
-    <div class="subBlock">
-        <p>The trade deadline will be set for the Saturday of the week 11 games of the NFL season.</p>
-    </div>
-    
-    <h4 bind:this={oneTwoFour}>1.2.4 Trade Restrictions</h4>
-    <div class="subBlock">
-        <p>You will not be able to trade draft picks that are more than 3 drafts away. For example, during the 2021 season you cannot trade any picks in or after the 2025 draft. You may only trade FAAB $ from the current season.</p>
-    </div>
-    
-    <h4 bind:this={oneTwoFive}>1.2.5 Veto/Trade Process</h4>
-    <div class="subBlock">
-        <p>A total of 7 veto votes are required to veto a trade. Vetoes are only appropriate in instances of collusion or an egregious mismatch of value (i.e. CMC for a backup kicker). Not liking a trade does not warrant a veto.</p>
-    </div>
-    
-    
-    
-    <h3 bind:this={oneThree}>1.3 Waiver Wire</h3>
-    
-    <p>FAAB Waiver wire system. Each team will begin the season with $100. $0 bids are allowed. Bids will process Thursdays and Sundays at 9AM EST.</p>
-
-    <p>FAAB budgets will reset each season in January.</p>
-    
-    
-    <h2 class="sectionHeading" bind:this={two}>Section 2 Drafting</h2>
-    
-    <h3 bind:this={twoOne}>2.1 Draft Order</h3>
-    <p>The draft order each year will be a linear draft in reverse order of the previous year’s regular season standings.</p>
-
-    <h3 bind:this={twoTwo}>2.2 Rookie Drafts</h3>
-    <p>Rokkie drafts will consist of 3 round of drafting, with 5 minutes alotted for each pick. To make room for the incoming players, benches will be expanded by (5) spots. These spots will be removed in mid-August, at which point you will need to have cut the necessary players.</p>
-    <p>Any spots not filled during the draft, can be filled immediately afterwards from the waiver wire.</p>
-    
-    <h3 bind:this={twoThree}>2.3 Draft Day Trades</h3>
-    <p>If a trade is being made during the draft, one or both parties can alert the commissioner to pause the draft to allow for extra time to negotiate the trade.</p>
-    
-    <h2 class="sectionHeading" bind:this={three}>Section 3 Scoring System</h2>
-
-    <h3 bind:this={threeOne}>3.1 Scoring System</h3>
-    <p>The league scoring system breakdown is listed on the Sleeper fantasy app (for the most part, it follows typical .5PPR Scoring). The scoring system will never change without a majority league vote.</p>
-    
-    <h2 class="sectionHeading" bind:this={four}>Section 4 Postseason</h2>
-    
-    <h3 bind:this={fourOne}>4.1 Playoffs</h3>
-    <p>At the end of the season 6 teams will make the playoffs. The first round of playoffs will commence in week 15. Each team that wins their division and the 4 wild card teams that finish with the best records, will receive a playoff berth. The 2 teams that win their division will receive a bye week in the first round of the playoffs. Each playoff matchup will only last one week and the winner will advance. Week 18 will not be used.</p>
-    
-    <h3 bind:this={fourTwo}>4.2 Seeding Tiebreakers</h3>
-    <p>If two teams finish with the same record the tiebreakers will go as followed:</p>
-
-    <ol>
-        <li>Points For</li>
-        <li>Head 2 Head Record</li>
-        <li>Division Record</li>
-        <li>Total Points Against</li>
-        <li>Coin Flip</li>
-        <li>Duel to the death</li>
-    </ol>
-
-    <h2 class="sectionHeading" bind:this={five}>Section 5 Tanking Policy</h2>
-    
-    <h3 bind:this={fiveOne}>5.1 League Tanking Policy</h3>
-    <p>No team may intentionally leave starting roster spots empty. Any evidence of intentionally leaving roster spots empty in order to improve your draft position may be subject to punishment, including but not limited to the forfeiture of draft selections.</p>
-
-    <h2 class="sectionHeading" bind:this={six}>Section 6 Replacing Managers</h2>
-    
-    <h3 bind:this={sixOne}>6.1 Removing Managers</h3>
-    <p>Short of continuously failing to set a valid lineup, or confirmed collusion, no manager can be removed against their will. Participation, through the league chat, trade offers, and the waiver wire, is strongly encouraged but generally grounds for removal.</p>
-    
-    <h3 bind:this={sixTwo}>6.2 Replacing Managers</h3>
-    <p>When a manager needs to be replaced, the commisiooners will try to find a suitable candidate with some connection to at least a portion of the existing managers. Priority will be placed on managers who are eager to take on a dynasty commitment and will be very active within the league.</p>
-    
-    <h3 bind:this={sixThree}>6.3 Replacement Incentive</h3>
-    <p>In the event that a manager chooses to quit the league or is removed by a comissioner, an incoming manager is offered a 50% reductioon on their first year buy-in.</p>
-
-    <h2 class="sectionHeading" bind:this={seven}>Section 7 League Finances</h2>
-    
-    <h3 bind:this={sevenOne}>7.1 League Dues</h3>
-    <p>League dues are set at {dues}$. Dues are collected through <a href="https://www.leaguesafe.com/league/3949641">LeagueSafe</a> and collection will be sent out no later than the first of August. All managers must be fully paid up before the start of regular season. In the event that a manager fails to pay before the deadline, a 10% penalty will be addd to their payment and will go towards the payouts at the end of the year.</p>
-    
-    <h3 bind:this={sevenTwo}>7.2 Payout</h3>
-    <p>League payout is structured as follows:</p>
-    <ul>
-        <li>1st place: {dues * 8}$</li>
-        <li>2nd place: {dues * 3}$</li>
-        <li>3rd place: {dues}$</li>
-    </ul>
-    <p>In the event that a manager was fined due to late payment, their extra fee will be added to the winner's payout. Similarly, if new managers come into the league and the payout is smaller, the difference will come out of the winner's prize.</p>
-    
-    <h3 bind:this={sevenThree}>7.3 Raising Dues</h3>
-    <p>A ⅔ majority vote is required in order to raise league dues. In the event that a manager is no longer financially comfortable with the buyin, finding a co-manager to split the cost is reccomended.</p>
-
-</div>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">DYNASTY FANTASY FOOTBALL - CONSTITUTION</span></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">(Last updated - June 11, 2024) &nbsp;</span></p>
+<p><br></p>
+<p><br></p>
+<p><strong><span style="font-size:11pt;font-family:Arial,sans-serif;">LEAGUE MANAGERS</span></strong><span style="font-size:11pt;font-family:Arial,sans-serif;">: This will be a 12-team league. The league&rsquo;s 12 current managers are listed below.</span></p>
+<p><br></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">Brian Boesch (330-321-3795)&nbsp;</span></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">Dave D&rsquo;Amore (216-392-2243)</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">Ira Dogruyol (631-902-4522)</span></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">Cody Francis (330-843-2576)</span></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">Kevin Huyghe (330-310-5555)</span></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">David Kahn (407-970-3486)</span></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">Chris Kiernan (609-709-1763)</span></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">Rob Low (248-787-1464)</span></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">Matt Present (301-204-7445)</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">Anthony Rich (330-697-7960)</span></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">Mike Teplitzky (216-408-9233)</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">Joe Weil (908-337-2525)</span></p>
+<p><br></p>
+<p><strong><span style="font-size:11pt;font-family:Arial,sans-serif;">TEAM NAMES</span></strong><span style="font-size:11pt;font-family:Arial,sans-serif;">: Your team name must be read in a way that is similar to a sports team (City/Nickname), as best as you can. Team names are locked for the season at the Rookie Draft (year one: the start-up draft).&nbsp;</span></p>
+<p><br></p>
+<p><strong><span style="font-size:11pt;font-family:Arial,sans-serif;">PAY STRUCTURE</span></strong><span style="font-size:11pt;font-family:Arial,sans-serif;">: The yearly entry fee will be $125 per manager. Each season&rsquo;s payout structure will be distributed in the manner detailed below&hellip;</span></p>
+<p><br></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">FIRST PLACE: $625</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">SECOND PLACE: $275</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">THIRD PLACE: $125</span></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">MOST REGULAR SEASON POINTS: $110</span></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">BEST RECORD: $80</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">NINE COMP PICK WINNERS: $15 each (total of $135 per game)</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">CARRY-OVER POT: $100</span></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">CHAMPIONSHIP TROPHY/RING: no more than $50*&nbsp;</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">&nbsp; * - leftover goes to first-place finisher</span></p>
+<p><br></p>
+<p><strong><span style="font-size:11pt;font-family:Arial,sans-serif;">PAYMENT PROCESS</span></strong><span style="font-size:11pt;font-family:Arial,sans-serif;">: A franchise&rsquo;s yearly fee is due no later than the next year&rsquo;s rookie draft (the first year - June 30). Also, if you trade away your first- or second-round draft pick for a season, you must submit $75 (per first-round pick) or $50 (per second-round pick) to the league pot for that season (therefore, if you trade both away, you must submit the entirety of that season&rsquo;s yearly fee).&nbsp;</span></p>
+<p><br></p>
+<p><strong><span style="font-size:11pt;font-family:Arial,sans-serif;">PAYMENT OPTIONS</span></strong><span style="font-size:11pt;font-family:Arial,sans-serif;">:</span></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">Venmo - Anthony-Rich-3</span></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">PayPal - Anthonycrich@gmail.com</span></p>
+<p><br></p>
+<p><strong><span style="font-size:11pt;font-family:Arial,sans-serif;">LEAVING THE LEAGUE</span></strong><span style="font-size:11pt;font-family:Arial,sans-serif;">: If you are considering leaving the league, we ask that you inform the league by March 31. No money will be returned to you, with any left-over money being added to the carry-over pot. All remaining league members will submit potential new managers to the league commissioner, and there will be a four-manager committee created to determine the new manager and what, if anything, needs to be done to give that new manager a competitive opportunity. Some potential options include&hellip;</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">- Reduced first-year entry fee</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">- Bonus rookie draft picks</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">- Expansion draft involving the top 1-3 teams.</span></p>
+<p><br></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">The committee will consist of the most recent season&rsquo;s champion and last-place finisher (or 2nd/11th, if the team leaving finished in 1st or 12th), along with two other people. The commissioner will be involved and will be the tie-breaking vote on any issues that have split the committee in half.</span></p>
+<p><br></p>
+<p><strong><span style="font-size:11pt;font-family:Arial,sans-serif;">CARRY-OVER POT</span></strong><span style="font-size:11pt;font-family:Arial,sans-serif;">: Each year, $100 will be held in a side pot. To earn all of the money in that side pot, you must win back-to-back championships. If and when that happens, the back-to-back champion will receive the first-place share, along with the entirety of the carry-over pot. Then, the carry-over money will reset, and no one will be able to win the extra $100 in the very next season (as a three-peat will not constitute a back-to-back; that owner would have to win four straight to win consecutive carry-over pots).&nbsp;</span></p>
+<p><br></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">Should the league dissolve with money still in the carry-over pot, then the money will be distributed evenly to the current members of the league at the end of the league&rsquo;s history.</span></p>
+<p><br></p>
+<p><strong><span style="font-size:11pt;font-family:Arial,sans-serif;">START-UP DRAFT</span></strong><span style="font-size:11pt;font-family:Arial,sans-serif;">: The league will begin with a 32-round start-up draft on Monday, July 19, 2021. It will take place on zoom. The start-up draft will constitute two phases. Phase 1 is the auction portion. Each manager will receive $100 auction dollars to fill six positions. We will randomly generate the order of nominations.</span></p>
+<p><br></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">Each team will exit Phase 1 with exactly six players. There will be a 2-player limit per manager at the quarterback and tight end positions, while there will be no limit on the running back and wide receiver positions. Once a manager has filled all six slots, they will not be eligible to nominate a player, and their order will be skipped. We will maintain the snake draft order of nominations until everyone has six players.&nbsp;</span></p>
+<p><br></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">Once Phase 1 is over, we will take a brief break and finalize the order for Phase 2, the snake draft portion (players 7-32). We will randomly generate the order of this portion, and trading will be available, both prior to the start of the snake draft (position) and once it begins (picks; the only rule is that an even number of picks must be traded away/traded for).&nbsp;</span></p>
+<p><br></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">Please note: all teams must have at least 6 rookies or second-year players in order to fill out their taxi squad, as we will be drafting for those six spots as well.&nbsp;</span></p>
+<p><br></p>
+<p><strong><span style="font-size:11pt;font-family:Arial,sans-serif;">ROSTER CONSTRUCTION</span></strong><span style="font-size:11pt;font-family:Arial,sans-serif;">: Teams can own as many as 32 players, with the roster breaking down in this way&hellip;</span></p>
+<p><br></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">10 starters (QB, RB, RB, WR, WR, TE, FLEX, FLEX, FLEX, SUPERFLEX)</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">22 active bench spots</span></p>
+<p><br></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">UPDATE, 6/11/24: We have eliminated the 2 IR spots and shifted the 6 spots that were formerly taxi squad players (for rookies and qualifying second-year players) to additional bench spots. 2024 will be the lone season with 22 bench spots, as we will shift to 20 bench spots following the 2025 rookie draft.</span></p>
+<p><br></p>
+<p><strong><span style="font-size:11pt;font-family:Arial,sans-serif;">LEAGUE SCORING</span></strong><span style="font-size:11pt;font-family:Arial,sans-serif;">: Here is the scoring parameters for the league&hellip;</span></p>
+<p><br></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">Passing Yards</span></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">+0.04 per yard (25 yards = 1 point)&nbsp;</span></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">Passing TD</span></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">+4</span></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">2-Pt Conversion</span></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">+2</span></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">Pass Intercepted</span></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">-2</span></p>
+<p><br></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">Rushing Yards</span></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">+0.1 per yard (10 yards = 1 point)</span></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">Rushing TD</span></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">+6</span></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">2-Pt Conversion</span></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">+2</span></p>
+<p><br></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">Reception</span></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">+1</span></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">Receiving Yards</span></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">+0.1 per yard (10 yards = 1 point)</span></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">Receiving TD</span></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">+6</span></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">2-Pt Conversion</span></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">+2</span></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">Reception Bonus - TE</span></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">+0.50</span></p>
+<p><br></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">Fumble Lost</span></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">-2</span></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">Special Teams TD</span></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">+6</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">(Added 6/15/23) Fumble Recovery TD on offense</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">+6</span></p>
+<p><br></p>
+<p><br></p>
+<p><strong><span style="font-size:11pt;font-family:Arial,sans-serif;">SCHEDULE</span></strong><span style="font-size:11pt;font-family:Arial,sans-serif;">: The regular season will stretch from week 1 to week 14, with the playoffs beginning in week 15. The semifinals will be in week 16, while the championship game will be in week 17. Week 18 will not come into play.&nbsp;</span></p>
+<p><br></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">Each team will receive two decisions per week. One will be a head-to-head, while the second will be a pass/fail (top six individual team scores receive a win, bottom six receive a loss). Therefore, each regular season will feature 28 decisions per team. Ties are possible in the head-to-head format (no tiebreaker).&nbsp;</span></p>
+<p><br></p>
+<p><strong><span style="font-size:11pt;font-family:Arial,sans-serif;">POSTSEASON</span></strong><span style="font-size:11pt;font-family:Arial,sans-serif;">: The top six teams will make the playoffs, with the top two seeds getting byes to the quarterfinals. In the event of a tie, we will use total points as the tiebreaker. The top seed in the playoffs will have one of two advantages and must choose by 11:59pm ET on the Wednesday before Week 15.</span></p>
+<p><br></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">Bracket Alignment: The #1 seed would get to organize the wild card round how they see fit. This manager gets to set up the first-round matchups and the side of the bracket that each matchup goes. This MUST be determined by 11:59pm ET on the Wednesday before Week 15.&nbsp;</span></p>
+<p><br></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">Take It or Leave It: The #1 seed would get to set their Week 15 lineups and have the option to take their Week 15 score and use it for their Week 16, semifinal matchup. This MUST be determined by 11:59pm ET on the Wednesday before Week 16. If the manager does not make a choice by then, we will use their Week 16 score.</span></p>
+<p><br></p>
+<p><strong><span style="font-size:11pt;font-family:Arial,sans-serif;">TOILET BOWL</span></strong><span style="font-size:11pt;font-family:Arial,sans-serif;">: (Updated 7/10/22) Beginning with the 2022 season, the Toilet Bowl will feature only the six non-playoff teams in a traditional 6-team, 3-week tournament format.&nbsp;</span></p>
+<p><br></p>
+<p><strong><span style="font-size:11pt;font-family:Arial,sans-serif;">TRADE DEADLINE</span></strong><span style="font-size:11pt;font-family:Arial,sans-serif;">: The trade deadline will be the Tuesday night following Week 13, or the second-to-last regular season game of the season. Then, trades will once again be made possible after the Super Bowl.&nbsp;</span></p>
+<p><br></p>
+<p><strong><span style="font-size:11pt;font-family:Arial,sans-serif;">PARTICIPATION REQUIREMENTS</span></strong><span style="font-size:11pt;font-family:Arial,sans-serif;">: In order to allow the league to function properly, the following commitments are required.</span></p>
+<p><br></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">In-season trade offers: Please respond to, or acknowledge, the offer within 24 hours.</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">Offseason trade offers: Please respond to, or acknowledge, the offer within 4 days.</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">Drafts: Please commit to a video chat for the rookie draft each year, sometime between June 1 and July 31.</span></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">Lineups: Please submit an active lineup in every game.&nbsp;</span><u><span style="font-size:11pt;font-family:Arial,sans-serif;">Teams may not actively tank in order to improve draft stock after falling out of the playoff hunt. </span></u></p>
+<p><br></p>
+<p><strong><span style="font-size:11pt;font-family:Arial,sans-serif;">ROOKIE DRAFT</span></strong><span style="font-size:11pt;font-family:Arial,sans-serif;">:</span></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">Each year, we will have a 5-round rookie draft. Each team will start with the rights to 4 draft picks, as 12 of the 60 picks will be supplemental draft picks. Here is the complexion of the rookie draft:</span></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">Round 1 (Picks 1-12): The order of the top six selections will be determined via a Draft Lottery, which will be held in January each year. We will randomly select the top three picks, with the other three ordered by record. The remainder of the first round will be determined by playoff results.</span></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">1.01: Lottery&rsquo;s first pull</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">1.02: Lottery&rsquo;s second pull</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">1.03: Lottery&rsquo;s third pull</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">1.04: Worst record of non-pulled team in lottery</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">1.05: Second-worst record of non-pulled team in lottery</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">1.06: Remaining non-playoff qualifier</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">1.07: Worse record of Wild Card round loser in playoffs</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">1.08: Better record of Wild Card round loser in playoffs</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">1.09: Loser of third-place game</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">1.10: Winner of third-place game</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">1.11: Loser of championship game</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">1.12: Winner of championship game</span></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">The lottery odds will be as follows&hellip;</span></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">12</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><sup><span style="font-size:0.6em;">th</span></sup></span><span style="font-size:11pt;font-family:Arial,sans-serif;">&nbsp;Place (based on regular season record only): 50% chance</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">11</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><sup><span style="font-size:0.6em;">th</span></sup></span><span style="font-size:11pt;font-family:Arial,sans-serif;">&nbsp;Place: 25% chance</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">10</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><sup><span style="font-size:0.6em;">th</span></sup></span><span style="font-size:11pt;font-family:Arial,sans-serif;">&nbsp;Place: 12% chance</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">9</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><sup><span style="font-size:0.6em;">th</span></sup></span><span style="font-size:11pt;font-family:Arial,sans-serif;">&nbsp;Place: 7% chance</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">8</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><sup><span style="font-size:0.6em;">th</span></sup></span><span style="font-size:11pt;font-family:Arial,sans-serif;">&nbsp;Place: 4% chance</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">7</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><sup><span style="font-size:0.6em;">th</span></sup></span><span style="font-size:11pt;font-family:Arial,sans-serif;">&nbsp;Place: 2% chance</span></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">(Updated 6/15/23) With the changes to the supplemental picks, everything from 2.07 through 4.06 bumps back one pick, to account for 2.07 going to the best supplemental round performer. See more in SUPPLEMENTAL ROUND.</span></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">Round 2 (Picks 13-24): Picks 2.07-2.12 will follow the same rules as above. Picks 2.01-2.06 will reset to 12</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><sup><span style="font-size:0.6em;">th</span></sup></span><span style="font-size:11pt;font-family:Arial,sans-serif;">&nbsp;place through 7</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><sup><span style="font-size:0.6em;">th</span></sup></span><span style="font-size:11pt;font-family:Arial,sans-serif;">&nbsp;place (so, the lottery order will ONLY affect the first round).</span></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">Round 3 and 4 (Picks 25-48): The Supplemental Round of the Draft will take place from the seventh pick of the third round through the sixth pick of the fourth round (Picks 31-42). Each non-playoff team will have their automatically-assigned pick BEFORE the supplemental draft, while all playoff teams will have their automatically-assigned pick AFTER the supplemental draft.</span></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">Round 5 (Picks 49-60): We will reset to the rules for Round 2.</span></p>
+<p><strong><span style="font-size:11pt;font-family:Arial,sans-serif;">SUPPLEMENTAL ROUND</span></strong><span style="font-size:11pt;font-family:Arial,sans-serif;">: We will determine the draft pick holders for the 12 supplemental picks in the following ways...</span></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">There will be eight supplemental round events that will go toward determining who earns 2.07. Teams will receive points based on their finishes in each of these events on a 12-1 scale. In the event of a tie, all teams will receive the highest-possible point total (i.e., if 4 teams are eliminated in survivor in week 1, each team will receive 4 points, not 1). Note: for the 2-pick playoff fantasy draft, we will go in order of final points, so one of the pick winners may only get 10, or 9, etc. points.</span></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">Current Events, since 2023 season (lone adjustment from &lsquo;23 to &lsquo;24, Bowl Confidence becomes CFP Bracket):</span></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">1 pick: NFL Survivor Pool (starts in Week 1 of NFL season) [Run by Matt]</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">1 pick: Dash to Land #1 Predictions [Run by Brian]</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">1 pick: College Football Playoff Bracket (December) [Run by Kevin]</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">2 picks: NFL Playoff Draft (Drafts to take place before Wild Card round of NFL Playoffs) [Run by Chris]</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">1 pick: Super Bowl Prop Bets (February) [Run by Joe]</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">1 pick: NCAA Men&rsquo;s Basketball Tournament bracket (March) [Run by Dave]</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">1 pick: Masters Pool (April) [Run by Dave]</span></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">Not associated with the quest for 2.01, but still to determine comp picks:</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">1 pick: Winner of the Toilet Bowl (would receive $15)</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">1 pick: Non-playoff team with the highest regular-season point total (determined at end of regular season; would NOT receive $15)</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">1 pick: Team with the highest total of points against in the regular season (determined at end of regular season; would NOT receive $15)</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">No supplemental picks may be traded until the order of the supplemental round is established. We will randomize the order the week after the Masters each year. We will use the third round picks we all own as the &ldquo;supplemental round&rdquo; pick that we must all protect. As a result, please DO NOT TRADE YOUR THIRD ROUND ROOKIE DRAFT PICK IN ANY WAY.&nbsp;</span></p>
+<p><br></p>
+<p><strong><span style="font-size:11pt;font-family:Arial,sans-serif;">FREE AGENCY</span></strong><span style="font-size:11pt;font-family:Arial,sans-serif;">: We will implement a FAAB bidding process for free agency. There will be a $100 limit, with the minimum bid being $0 and the bid increments being $1. Each team will get $100 from the rookie/start-up draft through the end of the fantasy playoffs. Following the playoffs, everyone&rsquo;s FAAB amount will reset to $100 for any offseason bidding (through September 1).</span></p>
+<p><br></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">Update, 6/11/24: We have revamped the offseason schedule in the following ways&hellip;</span></p>
+<p><br></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">- A few days after Week 17, we will reset FAAB dollars to the normal offseason figure, and daily trades/claims/roster changes can be made through the Tuesday following the Super Bowl.</span></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">- Then, from that day until the first Monday in April, rosters will be frozen (no transactions allowed).&nbsp;</span></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">- Once that first Monday in April arrives, we will shift to a weekly waiver processing on each Monday at 8am until the first Monday in August (when we will return to daily waiver processing). Trades are fair game at any point, as are roster drops.</span></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">- We&rsquo;ll reset the FAAB amounts for the in-season allotment following the waiver run at 8am on September 1.</span></p>
+<p><br></p>
+<p><strong><span style="font-size:11pt;font-family:Arial,sans-serif;">OFFSEASON ROSTER TRANSITIONS</span></strong><span style="font-size:11pt;font-family:Arial,sans-serif;">: (Updated 6/11/24) All rosters must be compliant no later than one week after the rookie draft.</span></p>
+<p><br></p>
+<p><strong><span style="font-size:11pt;font-family:Arial,sans-serif;">UNFINISHED GAMES</span></strong><span style="font-size:11pt;font-family:Arial,sans-serif;">&nbsp;(Added 6/15/23): In light of the Bills/Bengals game that didn&rsquo;t finish during the 2022 season, we have instituted the following rule: if a game does not come to a conclusion during a given week, any league matchup with players in that game will be decided in the following way&hellip;</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">&nbsp; &nbsp;- If one team has a 60% or better likelihood of winning, per Sleeper, then that team will be ruled the winner</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">&nbsp; &nbsp;- If both teams are between 41% and 59% to win the game, per Sleeper, then that game will be ruled a tie</span></p>
+<p><br></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">_________</span></p>
+<p><br></p>
+<p><strong><span style="font-size:11pt;font-family:Arial,sans-serif;">EDITS</span></strong><span style="font-size:11pt;font-family:Arial,sans-serif;">: All edits after the start-up draft are logged below&hellip;</span></p>
+<p><br></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">7/21/21: We have established that there will be an offseason and an in-season FAAB budget of $100 (details in &ldquo;FREE AGENCY&rdquo;). Because of this, we are shifting the stretch of rookie draft from 5/1-6/30 to 6/1-7/31 in order to make the offseason/season FAAB budget stretches close to equal. We are also making September 1 the date that all Taxi Squad eligibility locks in, and when rosters must be valid by (max 26 on your active roster).</span></p>
+<p><br></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">9/2/21: Joe will require at least 3 reminders for anything in the league. After 3, the commissioner has the right to fine him $11 FAAB dollars. It&rsquo;s not like he&rsquo;s ever going to read this. Surprised he even updates his team.</span></p>
+<p><br></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">1/5/22: The offseason/in-season FAAB dollar cut-off will be September 1. That&rsquo;s also the day that all rosters must be in place and active for the upcoming season. We originally had it as the rookie draft cut-off, but that seems too early in the process.</span></p>
+<p><br></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">4/25/22: Added the &ldquo;OFFSEASON ROSTER TRANSITIONS&rdquo; section to the constitution to provide clarity on roster timing.&nbsp;</span></p>
+<p><br></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">7/10/22: The following items were adjusted/added at the 2022 Rookie Draft:</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">- Postseason ties: The higher seed will advance when there is a scoring tie in the postseason (added under POSTSEASON).</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">- The Toilet Bowl has been changed to just the 7-12 seeds, in a traditional playoff format (with seeds 7 and 8 getting byes).</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">- Under SUPPLEMENTAL ROUND, the new format and events have been added.</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">- We operate under Sleeper rules for player position decisions, IR/PUP designations, etc.</span></p>
+<p><br></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">6/15/23: The following items were adjusted/added at the 2023 Rookie Draft:</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">- Payment Structure: Updated to eliminate the $100 Toilet Bowl prize, add in $15/comp game and adjust the prizes for the top record and regular season points winner.</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">- Postseason advantages: The top seed in the postseason now gets to choose from one of the two options (Bracket Alignment or Take It or Leave It).</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">- Adjustment of the Supplemental Picks process in the following ways&hellip;</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">&nbsp; &nbsp;- Instead of the top performer of the 8 non-league-related comp pick events earning 2.01, they&rsquo;ll earn 2.07.</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">&nbsp; &nbsp;- Each winner for those 8 comp picks (along with the Toilet Bowl winner), will receive $15.</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">- Added &ldquo;Fumble Recovery TD - +6&rdquo; to scoring to account for an offensive player recovering a fumble of a teammate for a touchdown</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">- Added the UNFINISHED GAME rule, in case a game does not come to an end during a given week</span></p>
+<p><br></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">6/11/24: The following items were adjusted/added at the 2024 Rookie Draft:</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">- Roster Construction: Adjusted to eliminate the 2 IR spots and transition the 6 taxi-squad spots to bench spots.</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">- Free Agency: We revamped many of the protocols for the offseason, including&hellip;</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">&nbsp; &nbsp;- Maintaining daily activity on the waiver wire through the Super Bowl, and then shifting to a break from the Tuesday after the Super Bowl through the first Monday in April.</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">&nbsp; &nbsp;- Shifting any April through July waiver claims to weekly, on each Monday</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">- Offseason roster transitions: With no more taxi squad or IR spots, updated the language to reflect that rosters must be compliant no later than one week after the rookie draft.</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">- Compensatory Picks: Changed Bowl Confidence Pool to CFP Bracket Challenge</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br><br></span></p>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">________</span></p>
+<p><br></p>
+<p><strong><span style="font-size:11pt;font-family:Arial,sans-serif;">PREVIOUS PROTOCOLS</span></strong><span style="font-size:11pt;font-family:Arial,sans-serif;">:</span></p>
+<p><br></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">Payment Structure:</span></p>
+<p><br></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">2021-22:</span></p>
+<p><br></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">FIRST PLACE: $625</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">SECOND PLACE: $275</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">THIRD PLACE: $125</span></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">MOST REGULAR SEASON POINTS: $125</span></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">BEST RECORD: $100</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">TOILET BOWL: $100</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">CARRY-OVER POT: $100</span></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">CHAMPIONSHIP TROPHY/RING: no more than $50 (leftover goes to first-place finisher)</span></p>
+<p><br></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">Postseason Advantages:</span></p>
+<p><br></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">2021-22:</span></p>
+<p><br></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">In each of the league&rsquo;s first two seasons, the top seed got both advantages, and the second seed got the week 15 keep it or leave it advantage. Before the 2023 season, we changed things to give the 1 seed the option of one or the other.</span></p>
+<p><br></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">Toilet Bowl:</span></p>
+<p><br></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">2021:&nbsp;</span></p>
+<p><br></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">This format, won by ultimate Toilet Bowl champion Brian Boesch, was used in the inaugural season of the league.</span></p>
+<p><br></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">Non-playoff qualifiers and Wild Card Round losers will be eligible to participate in the Toilet Bowl. Here is the breakdown of that event. Please note that the Toilet Bowl results will not affect draft order/lottery odds (those are solely dictated by the regular season standings).</span></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">- Week 15: Normal set-up, with seeds 9 and 12 squaring off, as do seeds 10 and 11. Winners advance. Losers, get the hell out&hellip;sucks to suck.</span></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">- Week 16: We have 6 teams left in the toilet bowl &ndash; the regular playoff round 1 losers, the 7/8 seeds, and the winners of the 9/12 and 10/11 games. We allow the higher of the two seeds to lose in the first round of the real playoffs to choose two teams from the consolation bracket to play in a three-team battle. Highest score advances to the toilet bowl. Same for the lower-seeded playoff round one loser, with the other two remaining teams. So, 2 teams advance out of the 6. ADDED 12/20: A deadline of Wednesday at 11:59pm leading into Week 16 has been instituted for this selection process.</span></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">- Week 17: Two remaining teams play for the toilet bowl title. Winner take all.</span></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">2022: We utilized the traditional 6 non-playoff teams format, with the winner earning $100.&nbsp;</span></p>
+<p><br></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">Compensatory Picks:</span></p>
+<p><br></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">2021:&nbsp;</span></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">1 pick: NFL Survivor Pool (starts in Week 1 of NFL season)</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">1 pick: Non-playoff team with the highest regular-season point total (determined at end of regular season)</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">1 pick: Team with the highest total of points against in the regular season (determined at end of regular season)</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">2 picks (split into 2 drafts of 6 people, determined by draft time availability/record): NFL Playoff Draft (Drafts to take place before Wild Card round of NFL Playoffs)</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">2 picks: Royal Rumble pools (60 total wrestlers, so each manager will get 5 total [either 2 men and 3 women, or vice versa])&nbsp;</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">1 pick: Super Bowl Prop Bets (February)</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">2 picks (1 for champion, 1 for total points): March Madness with a Twist (March)</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">1 pick: NCAA Men&rsquo;s Basketball Tournament bracket (March)</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">1 pick: Masters Pool (April)&nbsp;</span></p>
+<p><br></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">2022:&nbsp;</span></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">There will be nine supplemental round events that will go toward determining who gets 2.01. Teams will receive points based on their finishes in each of these events on a 12-1 scale. In the event of a tie, all teams will receive the highest-possible point total (i.e., if 4 teams are eliminated in survivor in week 1, each team will receive 4 points, not 1). Note: for the 2-pick playoff fantasy draft, we will go in order of final points, so one of the pick winners may only get 10, or 9, etc. points.</span></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">1 pick: NFL Survivor Pool (starts in Week 1 of NFL season)</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">1 pick: Dash to Land #1 Predictions</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">1 pick: MLB Playoff Bracket Pool (October)</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">1 pick: College Football Bowl Confidence Pool (December)</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">2 picks (split into 2 drafts of 6 people, determined by draft time availability/record): NFL Playoff Touchdown Draft (Drafts to take place before Wild Card round of NFL Playoffs)</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">1 pick: Super Bowl Prop Bets (February)&nbsp;</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">1 pick: NCAA Men&rsquo;s Basketball Tournament bracket (March)</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">1 pick: Masters Pool (April)</span></p>
+<p><br></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">2021-23: Roster complexion (changed in 2024)</span></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">10 starters (QB, RB, RB, WR, WR, TE, FLEX, FLEX, FLEX, SUPERFLEX)</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">16 active bench spots</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">6 members of your taxi squads (first- and second-year players; rookies can come and go on the taxi squad, while second-year players cannot rejoin the taxi squad once they join the active roster for any period of time)</span></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">2 IR Spots</span></p>
