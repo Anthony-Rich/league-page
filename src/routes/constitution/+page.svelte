@@ -14,21 +14,8 @@
     }
 </script>
 
-<p><span style="font-size:11pt;font-family:Arial,sans-serif;">DYNASTY FANTASY FOOTBALL - CONSTITUTION</span></p>
+<p><span style="font-size:11pt;font-family:Arial,sans-serif;">DASH to Land #1 - CONSTITUTION</span></p>
 <p><span style="font-size:11pt;font-family:Arial,sans-serif;">(Last updated - June 11, 2024) &nbsp;</span></p>
-<p><br></p>
-<p><br></p>
-<p><strong><span style="font-size:11pt;font-family:Arial,sans-serif;">LEAGUE MANAGERS</span></strong><span style="font-size:11pt;font-family:Arial,sans-serif;">: This will be a 12-team league. The league&rsquo;s 12 current managers are listed below.</span></p>
-<p><br></p>
-<p><span style="font-size:11pt;font-family:Arial,sans-serif;">Brian Boesch (330-321-3795)&nbsp;</span></p>
-<p><span style="font-size:11pt;font-family:Arial,sans-serif;">Dave D&rsquo;Amore (216-392-2243)</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">Ira Dogruyol (631-902-4522)</span></p>
-<p><span style="font-size:11pt;font-family:Arial,sans-serif;">Cody Francis (330-843-2576)</span></p>
-<p><span style="font-size:11pt;font-family:Arial,sans-serif;">Kevin Huyghe (330-310-5555)</span></p>
-<p><span style="font-size:11pt;font-family:Arial,sans-serif;">David Kahn (407-970-3486)</span></p>
-<p><span style="font-size:11pt;font-family:Arial,sans-serif;">Chris Kiernan (609-709-1763)</span></p>
-<p><span style="font-size:11pt;font-family:Arial,sans-serif;">Rob Low (248-787-1464)</span></p>
-<p><span style="font-size:11pt;font-family:Arial,sans-serif;">Matt Present (301-204-7445)</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">Anthony Rich (330-697-7960)</span></p>
-<p><span style="font-size:11pt;font-family:Arial,sans-serif;">Mike Teplitzky (216-408-9233)</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">Joe Weil (908-337-2525)</span></p>
 <p><br></p>
 <p><strong><span style="font-size:11pt;font-family:Arial,sans-serif;">TEAM NAMES</span></strong><span style="font-size:11pt;font-family:Arial,sans-serif;">: Your team name must be read in a way that is similar to a sports team (City/Nickname), as best as you can. Team names are locked for the season at the Rookie Draft (year one: the start-up draft).&nbsp;</span></p>
 <p><br></p>
@@ -40,10 +27,6 @@
 <p><span style="font-size:11pt;font-family:Arial,sans-serif;">CHAMPIONSHIP TROPHY/RING: no more than $50*&nbsp;</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">&nbsp; * - leftover goes to first-place finisher</span></p>
 <p><br></p>
 <p><strong><span style="font-size:11pt;font-family:Arial,sans-serif;">PAYMENT PROCESS</span></strong><span style="font-size:11pt;font-family:Arial,sans-serif;">: A franchise&rsquo;s yearly fee is due no later than the next year&rsquo;s rookie draft (the first year - June 30). Also, if you trade away your first- or second-round draft pick for a season, you must submit $75 (per first-round pick) or $50 (per second-round pick) to the league pot for that season (therefore, if you trade both away, you must submit the entirety of that season&rsquo;s yearly fee).&nbsp;</span></p>
-<p><br></p>
-<p><strong><span style="font-size:11pt;font-family:Arial,sans-serif;">PAYMENT OPTIONS</span></strong><span style="font-size:11pt;font-family:Arial,sans-serif;">:</span></p>
-<p><span style="font-size:11pt;font-family:Arial,sans-serif;">Venmo - Anthony-Rich-3</span></p>
-<p><span style="font-size:11pt;font-family:Arial,sans-serif;">PayPal - Anthonycrich@gmail.com</span></p>
 <p><br></p>
 <p><strong><span style="font-size:11pt;font-family:Arial,sans-serif;">LEAVING THE LEAGUE</span></strong><span style="font-size:11pt;font-family:Arial,sans-serif;">: If you are considering leaving the league, we ask that you inform the league by March 31. No money will be returned to you, with any left-over money being added to the carry-over pot. All remaining league members will submit potential new managers to the league commissioner, and there will be a four-manager committee created to determine the new manager and what, if anything, needs to be done to give that new manager a competitive opportunity. Some potential options include&hellip;</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">- Reduced first-year entry fee</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">- Bonus rookie draft picks</span><span style="font-size:11pt;font-family:Arial,sans-serif;"><br></span><span style="font-size:11pt;font-family:Arial,sans-serif;">- Expansion draft involving the top 1-3 teams.</span></p>
 <p><br></p>
